@@ -1,3 +1,13 @@
 .title {
   color: red;
 }
+.box1 {
+  background-color: #bfc;
+  width: 100px;
+  height: 100px;
+}
+.box2 {
+  background-color: #bfa;
+  width: 200rpx;
+  height: 200rpx;
+}

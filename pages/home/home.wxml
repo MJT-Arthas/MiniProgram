@@ -1,2 +1,4 @@
 <text class="title">Hello World</text>
 <button size="mini">按钮</button>
+<view class="box1">Box1</view>
+<view class="box2">Box1</view>
