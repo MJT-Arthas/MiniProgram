@@ -1,0 +1,15 @@
+<!--pages/index/index.wxml-->
+<top-bar title="首页" titleclass="titleclass"/>
+<image 
+class="bgImg"
+mode="aspectFill"
+src="http://www.luxst.com/uploads/article/201904/30/160252g6jmaycx05jjaora.jpeg"
+>
+</image>
+
+<view style="color:white">Count:{{count}}</view>
+<button bindtap="plus">+</button>
+<button bindtap="minus">-</button>
+<view class="item">点击了{{item}}</view>
+<chose-bar titles='{{[ "左边","中间","右边" ]}}'
+bind:itemClick="itemClick"/>

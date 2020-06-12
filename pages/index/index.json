@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "test",
+  "navigationStyle": "custom",
+
+
+  "usingComponents": {
+    "top-bar":"/component/top-bar/top-bar",
+    "chose-bar":"/component/chose-bar/chose-bar"
+  }
+}

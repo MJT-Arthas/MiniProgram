@@ -1,0 +1,11 @@
+<!--component/chose-bar/chose-bar.wxml-->
+<view class="container">
+<block wx:for="{{titles}}" wx:key="index">
+  <view class="tab-title {{currentIndex==index?'active':''}}"
+  bind:tap="onItemClick"
+  data-index="{{index}}"
+  ><text>{{item}}
+  </text>
+  </view>
+</block>
+</view>

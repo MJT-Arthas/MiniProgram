@@ -1,2 +1,33 @@
-<!--pages/about/about.wxml-->
-<text>pages/about/about.wxml</text>
+<!-- pages/about/about.wxml -->
+<view class="weui-cells__title">
+		请选择站点
+		<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
+				<view class="weui-cell__hd">
+						<view class="weui-label">出发校区</view>
+				</view>
+				<view class="weui-cell__bd">
+						<picker bindchange="bindStartCompusChange" value="{{startIndex}}" range="{{startCompus}}">
+								<view class="weui-select weui-select_in-select-after">{{startCompus[startIndex]}}</view>
+						</picker>
+				</view>
+		</view>
+		<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
+				<view class="weui-cell__hd">
+						<view class="weui-label">目的校区</view>
+				</view>
+				<view class="weui-cell__bd">
+						<picker bindchange="bindEndCompusChange" value="{{endIndex}}" range="{{endCompus}}">
+								<view class="weui-select weui-select_in-select-after">{{endCompus[endIndex]}}</view>
+						</picker>
+				</view>
+		</view>
+    时刻表：（“ * ”为途经宝山校区）
+    <view 
+    wx:for="{{timeTable}}"
+    wx:key="index"
+    >{{item}}</view>
+    <view class="nowTime">当前时间：
+    <view>{{nowTime}}</view>
+    </view>
+</view>
+

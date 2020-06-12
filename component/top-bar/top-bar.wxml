@@ -1,0 +1,5 @@
+<view class="custom" style="padding-top:{{statusBarHeight}}px">
+  <view class=" titleclass title">{{title}}</view>
+</view>
+<view class="empty_custom" style="padding-top:{{statusBarHeight}}px"></view>
+

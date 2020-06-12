@@ -1,0 +1,23 @@
+
+.custom {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 45px;
+  background: #666666;
+  opacity: 0.5;
+  z-index: 999;
+}
+
+.empty_custom {
+  height: 45px;
+  width: 100%;
+}
+
+.title {
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+}

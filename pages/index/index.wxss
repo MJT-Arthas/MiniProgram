@@ -1,0 +1,23 @@
+
+.bgImg {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 100vh;
+  z-index: -999;
+  /* vertical-align: bottom; */
+}
+button {
+  opacity: 0.5;
+  color: rgb(87, 83, 83);
+}
+.titleclass {
+  color: red;
+}
+.item{
+  text-align: center;
+  color: aliceblue;
+  margin-top: 10px;
+}

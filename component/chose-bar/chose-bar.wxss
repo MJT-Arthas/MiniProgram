@@ -1,0 +1,18 @@
+/* component/chose-bar/chose-bar.wxss */
+.container {
+  display: flex;
+}
+.tab-title {
+  flex: 1;
+  text-align: center;
+  color: aliceblue;
+}
+
+.active {
+  color: greenyellow;
+
+}
+.active text {
+  padding: 5px 20px;
+  border-bottom: 6px solid greenyellow;
+}

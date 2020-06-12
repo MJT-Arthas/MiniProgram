@@ -1,4 +1,9 @@
-<text class="title">Hello World</text>
-<button size="mini">按钮</button>
-<view class="box1">Box1</view>
-<view class="box2">Box1</view>
+<!-- <text class="topBox"></text> -->
+<image 
+class="bgImg"
+mode="aspectFill"
+src="http://www.luxst.com/uploads/article/201904/30/160252g6jmaycx05jjaora.jpeg"
+bindtap="homeClick"
+>
+</image>
+<view class="nowTime">当前时间：{{nowTime}}</view>
