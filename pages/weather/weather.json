@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "Quiet Weather — 安静天气",
+  "enablePullDownRefresh": true,
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "top-bar":"/component/top-bar/top-bar"
+  }
+}

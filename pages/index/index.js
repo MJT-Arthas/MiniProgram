@@ -8,7 +8,7 @@ Page({
   data: {
     statusBarHeight: app.globalData.statusBarHeight,
     count: 0,
-    item:""
+    item:"左边"
   },
   onLoad() {
     wx.request({
@@ -32,7 +32,6 @@ Page({
     })
   },
   itemClick(e){
-    console.log(e.detail.title)
     this.setData({
       item:e.detail.title
     })

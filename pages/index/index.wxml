@@ -1,5 +1,5 @@
 <!--pages/index/index.wxml-->
-<top-bar title="首页" titleclass="titleclass"/>
+<top-bar title="test" titleclass="titleclass"/>
 <image 
 class="bgImg"
 mode="aspectFill"

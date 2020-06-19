@@ -1,6 +1,12 @@
 <!-- pages/about/about.wxml -->
+<image 
+class="bgImg"
+mode="aspectFill"
+src="http://www.luxst.com/uploads/article/201904/30/160252g6jmaycx05jjaora.jpeg"
+>
+</image>
 <view class="weui-cells__title">
-		请选择站点
+		请选择站点:
 		<view class="weui-cell weui-cell_active weui-cell_select weui-cell_select-after">
 				<view class="weui-cell__hd">
 						<view class="weui-label">出发校区</view>
