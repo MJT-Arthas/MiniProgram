@@ -28,3 +28,7 @@
   z-index: -999;
   /* vertical-align: bottom; */
 }
+
+.list{
+  margin-left: 15px;
+}

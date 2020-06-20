@@ -1,8 +1,9 @@
 <!-- pages/about/about.wxml -->
+<top-bar title="工作日校车查询" titleclass="titleclass"/>
 <image 
 class="bgImg"
 mode="aspectFill"
-src="http://www.luxst.com/uploads/article/201904/30/160252g6jmaycx05jjaora.jpeg"
+src="/assets/images/StarsWar.jpeg"
 >
 </image>
 <view class="weui-cells__title">
@@ -28,7 +29,7 @@ src="http://www.luxst.com/uploads/article/201904/30/160252g6jmaycx05jjaora.jpeg"
 				</view>
 		</view>
     时刻表：（“ * ”为途经宝山校区）
-    <view 
+    <view class="list"
     wx:for="{{timeTable}}"
     wx:key="index"
     >{{item}}</view>

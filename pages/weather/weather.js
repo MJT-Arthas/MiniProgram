@@ -87,7 +87,7 @@ Page({
     let now = new Date()
     // 存下来源数据
     data.updateTime = now.getTime()
-    data.updateTimeFormat = utils.formatDate(now, "MM-dd hh:mm")
+    data.updateTimeFormat = utils.formatDate(now, "MM-dd hh:mm:ss")
     wx.setStorage({
       key: 'cityDatas',
       data,
@@ -260,6 +260,7 @@ Page({
         this.setData({
           cityDatas: res.data,
         })
+        console.log(res.data)
       },
     })
   },
@@ -302,7 +303,10 @@ Page({
     })
   },
   reloadWeather() {
-    if (this.data.located) {
+    if (globalData.city) {
+      this.search(globalData.city)
+    }
+    else if (this.data.located) {
       this.init({})
     } else {
       this.search(this.data.searchCity)
@@ -313,11 +317,7 @@ Page({
   },
 
   onLoad() {
-    this.reloadPage(),
-      this.setData({
-        chooseCity: globalData.city
-      }),
-      console.warn(globalData.city)
+    this.reloadPage()
   },
   reloadPage() {
     this.setBcgImg()
@@ -359,11 +359,8 @@ Page({
     }
   },
   onShow() {
-    console.log(globalData.city)
     if (globalData.city) {
       this.search(globalData.city)
-    } else {
-      this.init({})
-    }
+    } 
   }
 })

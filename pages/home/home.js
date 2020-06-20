@@ -1,12 +1,13 @@
+let utils = require('../../utils/utils')
 Page({
     data:{
-      nowTime:new Date().toLocaleTimeString()
+      nowTime: utils.formatDate(new Date, "hh:mm:ss")
     },
     onLoad(){
       setInterval(
         ()=>{
           this.setData({
-            nowTime:new Date().toLocaleTimeString()
+            nowTime: utils.formatDate(new Date, "hh:mm:ss")
           })
         },1000)
     },
@@ -15,7 +16,7 @@ Page({
     },
     homeClick(){
       wx.switchTab ({
-        url: '/pages/index/index',
+        url: '/pages/weather/weather',
       })
     }
 })

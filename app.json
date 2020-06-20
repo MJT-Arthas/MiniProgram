@@ -2,21 +2,14 @@
   "pages": [
     "pages/home/home",
     "pages/weather/weather",
-    "pages/about/about",
     "pages/index/index",
+    "pages/about/about",
     "pages/citychoose/citychoose"
   ],
   "tabBar": {
     "selectedColor": "#ff5777",
     "backgroundColor": "#666666",
-    "list": [
-      {
-        "pagePath": "pages/weather/weather",
-        "text": "天气",
-        "iconPath": "/assets/images/weather/sun.png",
-        "selectedIconPath": "/assets/images/weather/sun.png"
-      },
-      {
+    "list": [{
         "pagePath": "pages/about/about",
         "text": "校车查询",
         "iconPath": "/assets/images/tabbar/category.png",
@@ -27,6 +20,12 @@
         "text": "测试",
         "iconPath": "/assets/images/weather/setting.png",
         "selectedIconPath": "/assets/images/weather/lifestyle_ag.png"
+      },
+      {
+        "pagePath": "pages/weather/weather",
+        "text": "天气",
+        "iconPath": "/assets/images/weather/sun.png",
+        "selectedIconPath": "/assets/images/weather/sun.png"
       }
     ]
   },

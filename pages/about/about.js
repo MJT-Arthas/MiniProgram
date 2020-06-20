@@ -1,12 +1,12 @@
 // pages/about/about.js
-var util = require('../../util.js');
+let utils = require('../../utils/utils')
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    nowTime: new Date().pattern("hh:mm:ss"),
+    nowTime: utils.formatDate(new Date, "hh:mm:ss"),
     startCompus: ["宝山校区", "嘉定南门", "延长北门"],
     startIndex: 0,
     endCompus: ["宝山校区", "嘉定南门", "延长北门"],
@@ -70,7 +70,7 @@ Page({
     setInterval(
       () => {
         this.setData({
-          nowTime: new Date().pattern("hh:mm:ss")
+          nowTime: utils.formatDate(new Date, "hh:mm:ss")
         })
       }, 1000)
       this.show();

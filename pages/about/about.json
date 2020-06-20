@@ -1,10 +1,14 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "top-bar":"/component/top-bar/top-bar",
+    "chose-bar":"/component/chose-bar/chose-bar"
+  },
   "navigationBarBackgroundColor": "#000000",
   "navigationBarTextStyle": "white",
   "navigationBarTitleText": "工作日校车查询",
   "backgroundColor": "#666666",
   "backgroundTextStyle": "dark",
+  "navigationStyle": "custom",
   "enablePullDownRefresh": false
-
 }
+  
