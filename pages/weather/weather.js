@@ -58,7 +58,7 @@ Page({
     searchCity: '',
     setting: {},
     bcgImgList: [{
-        src: 'http://www.luxst.com/uploads/article/201904/30/160252g6jmaycx05jjaora.jpeg',
+        src: '/assets/images/StarsWar.jpeg',
         topColor: '#393836'
       },
       {
@@ -83,7 +83,7 @@ Page({
       openSettingButtonShow: false,
       searchCity: location,
     })
-    wx.stopPullDownRefresh()
+    
     let now = new Date()
     // 存下来源数据
     data.updateTime = now.getTime()
@@ -209,6 +209,7 @@ Page({
           if (data.status === 'ok') {
             this.clearInput()
             this.success(data, location)
+            
           } else {
             wx.showToast({
               title: '查询失败',
@@ -252,6 +253,7 @@ Page({
   },
   onPullDownRefresh(res) {
     this.reloadPage()
+    setTimeout(()=>{wx.stopPullDownRefresh()},1000)
   },
   getCityDatas() {
     let cityDatas = wx.getStorage({
@@ -361,6 +363,8 @@ Page({
   onShow() {
     if (globalData.city) {
       this.search(globalData.city)
-    } 
+    } else{
+      this.init({})
+    }
   }
 })
