@@ -135,7 +135,7 @@
         </view>
       </view>
     </view>
-    <view class='footer'>MJT前端学习开发</view>
+    <view class='footer'>Arthas前端学习开发</view>
   </view>
   <view wx:if='{{openSettingButtonShow}}' class='openSettingButton'>
     <image src='/assets/images/weather/unlock.png'></image>

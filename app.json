@@ -4,10 +4,11 @@
     "pages/weather/weather",
     "pages/index/index",
     "pages/about/about",
-    "pages/citychoose/citychoose"
+    "pages/citychoose/citychoose",
+    "pages/selfReport/selfReport"
   ],
   "tabBar": {
-    "selectedColor": "#ff5777",
+    "selectedColor": "#87CEEB",
     "backgroundColor": "#666666",
     "list": [{
         "pagePath": "pages/about/about",
@@ -26,6 +27,12 @@
         "text": "天气",
         "iconPath": "/assets/images/weather/sun.png",
         "selectedIconPath": "/assets/images/weather/sun.png"
+      },      
+      {
+        "pagePath": "pages/selfReport/selfReport",
+        "text": "selfReport",
+        "iconPath": "/assets/images/weather/lifestyle_comf.png",
+        "selectedIconPath": "/assets/images/weather/lifestyle_comf.png"
       }
     ]
   },

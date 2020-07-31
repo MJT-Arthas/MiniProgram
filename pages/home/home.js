@@ -16,7 +16,7 @@ Page({
     },
     homeClick(){
       wx.switchTab ({
-        url: '/pages/weather/weather',
+        url: '/pages/selfReport/selfReport',
       })
     }
 })

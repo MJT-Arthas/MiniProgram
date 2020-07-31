@@ -92,6 +92,13 @@
 					"id": -1,
 					"name": "pages/index/index",
 					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/selfReport/selfReport",
+					"pathName": "pages/selfReport/selfReport",
 					"scene": null
 				}
 			]

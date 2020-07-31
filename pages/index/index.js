@@ -13,7 +13,25 @@ Page({
     code: null,
     password: null
   },
-  onLoad() {},
+  onLoad() {
+    wx.request({
+      url: "https://newsso.shu.edu.cn/login",
+      method: "POST",
+      data: 'username=18722898&password=Tt19960227&login_submit=%E7%99%BB%E5%BD%95%2FLogin',
+      header: {
+        "Content-Type": "application/x-www-form-urlencoded",
+        'cache-control': 'max-age=0',
+        'content-length': '77',
+        'content-type': 'application/x-www-form-urlencoded'
+      },
+      success: function (res) {
+        console.log(res.cookies);
+      },
+      fail: function (res) {
+        console.log(res)
+      }
+    })
+  },
   userMailInput(e) {
     this.setData({
       mail: e.detail.value
