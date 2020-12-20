@@ -1,3 +1,14 @@
 button[disabled]{
   background-color: #ccc;
 }
+.author{
+  text-align: center;
+}
+.bottom{
+  color: red;
+}
+.redstyle{
+  color: red;
+  text-align: center;
+  font-size: 20;
+}

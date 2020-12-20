@@ -72,10 +72,11 @@
                    </view>
                    
         		
-        <view class="weui-cells__title">填报失败可能由于账号密码错误、未到填报时间。</view>
-        <view class="weui-cells__title">填报时间过长（一直转圈）是由于健康之路有消息未读。</view>
+        <view class="weui-cells__title">温馨提示：填报失败可能由于账号密码错误、未到填报时间。（晚报需五点之后填报）</view>
+        <view class="weui-cells__title redstyle">现在有未读消息也可正常填报</view>
         <!-- <view class="weui-cells__title">如果觉得好用，可以在GitHub上给我点个star哦</view> -->
 </view>
+ <view class="author weui-cells__title bottom">由于每日一报服务器有ip访问频次限制，请勿在高峰时间填报，否则会填报失败</view>
 
 		
 
