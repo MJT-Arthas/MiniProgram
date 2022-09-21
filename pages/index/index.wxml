@@ -1,39 +1,31 @@
 <!--pages/index/index.wxml-->
-<top-bar title="test" titleclass="titleclass"/>
-<image 
-class="bgImg"
-mode="aspectFill"
-src="/assets/images/StarsWar.jpeg"
->
-</image>
+<top-bar title="地铁实时查询" titleclass=" titleclass" />
+<!-- <image class="bgImg" mode="aspectFill" src="/assets/images/StarsWar.jpeg">
+</image> -->
+<input class="input" name="userName" placeholder="请输入站点" value="{{mail}}" bindinput="userMailInput" />
+<button bindtap="reg">搜索</button>
+<view>
+    <view wx:for="{{current_station_data}}" wx:for-item="item" wx:key="line_name">
+        <view wx:for="{{item.time}}" wx:for-item="item2" wx:key="direction">
+            {{item2.direction}}方向 - 第一班车{{item2.first}}分钟 - 第二班车{{item2.second}}分钟
+        </view>
+    </view>
 
-<view style="color:white">Count:{{count}}</view>
+
+
+</view>
+
+<!-- <view style="color:white">Count:{{count}}</view>
 <button bindtap="plus">+</button>
 <button bindtap="minus">-</button>
 <view class="item">点击了{{item}}</view>
-<chose-bar titles='{{[ "左边","中间","右边" ]}}'
-bind:itemClick="itemClick"/>
+<chose-bar titles='{{[ "左边","中间","右边" ]}}' bind:itemClick="itemClick" />
 
 <view>
-  <input 
-  class="input" 
-  name="userName" 
-  placeholder="请输入邮箱" 
-  value="{{mail}}"
-  bindinput="userMailInput"/>
-  <button bindtap="sendMail">发送邮件</button>
-  <input 
-  class="input" 
-  name="code" 
-  placeholder="请输入验证码" 
-  value="{{code}}"
-  bindinput="userCodeInput"/>
-  <input 
-  class="input" 
-  name="password" 
-  placeholder="请输入密码" 
-  type="password"
-  value="{{password}}"
-  bindinput="userPasswordInput"/>
-  <button bindtap="reg">注册</button>
-</view>
+    <input class="input" name="userName" placeholder="请输入邮箱" value="{{mail}}" bindinput="userMailInput" />
+    <button bindtap="sendMail">发送邮件</button>
+    <input class="input" name="code" placeholder="请输入验证码" value="{{code}}" bindinput="userCodeInput" />
+    <input class="input" name="password" placeholder="请输入密码" type="password" value="{{password}}"
+        bindinput="userPasswordInput" />
+    <button bindtap="reg">注册</button>
+</view> -->

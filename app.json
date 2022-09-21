@@ -1,45 +1,39 @@
 {
-  "pages": [
-    "pages/home/home",
-    "pages/weather/weather",
-    "pages/index/index",
-    "pages/about/about",
-    "pages/citychoose/citychoose",
-    "pages/selfReport/selfReport"
-  ],
-  "tabBar": {
-    "selectedColor": "#87CEEB",
-    "backgroundColor": "#666666",
-    "list": [{
-        "pagePath": "pages/about/about",
-        "text": "校车查询",
-        "iconPath": "/assets/images/tabbar/category.png",
-        "selectedIconPath": "/assets/images/tabbar/category_active.png"
-      },
-      {
-        "pagePath": "pages/index/index",
-        "text": "测试",
-        "iconPath": "/assets/images/weather/setting.png",
-        "selectedIconPath": "/assets/images/weather/lifestyle_ag.png"
-      },
-      {
-        "pagePath": "pages/weather/weather",
-        "text": "天气",
-        "iconPath": "/assets/images/weather/sun.png",
-        "selectedIconPath": "/assets/images/weather/sun.png"
-      },      
-      {
-        "pagePath": "pages/selfReport/selfReport",
-        "text": "selfReport",
-        "iconPath": "/assets/images/weather/lifestyle_comf.png",
-        "selectedIconPath": "/assets/images/weather/lifestyle_comf.png"
-      }
-    ]
-  },
-  "permission": {
-    "scope.userLocation": {
-      "desc": "你的位置信息将用于天气定位"
-    }
-  },
-  "sitemapLocation": "sitemap43.json"
+    "pages": [
+        "pages/home/home",
+        "pages/weather/weather",
+        "pages/index/index",
+        "pages/about/about",
+        "pages/citychoose/citychoose"
+    ],
+    "tabBar": {
+        "selectedColor": "#87CEEB",
+        "backgroundColor": "#666666",
+        "list": [{
+                "pagePath": "pages/about/about",
+                "text": "校车查询",
+                "iconPath": "/assets/images/tabbar/category.png",
+                "selectedIconPath": "/assets/images/tabbar/category_active.png"
+            },
+            {
+                "pagePath": "pages/index/index",
+                "text": "实时地铁",
+                "iconPath": "/assets/images/weather/setting.png",
+                "selectedIconPath": "/assets/images/weather/lifestyle_ag.png"
+            },
+            {
+                "pagePath": "pages/weather/weather",
+                "text": "天气",
+                "iconPath": "/assets/images/weather/sun.png",
+                "selectedIconPath": "/assets/images/weather/sun.png"
+            }
+
+        ]
+    },
+    "permission": {
+        "scope.userLocation": {
+            "desc": "你的位置信息将用于天气定位"
+        }
+    },
+    "sitemapLocation": "sitemap43.json"
 }
